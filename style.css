@@ -1,0 +1,208 @@
+/* AULAS 2 E 3 do módulo 5 (CSS PT.2) */
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 200vh;
+    width: 200vw;
+}
+.div-dad {
+    height: 350px;
+    width: 350px;
+    background-color: #FF1396;
+}
+
+.div-son {
+    height: 150px;
+    width: 150px;
+    background-color: #FFFF00;
+}
+
+.tananan {
+    background: #FF0000;
+    height: 100px;
+    width: 100px;
+} */
+
+/* AULA 4: PSEUDO ELEMENTOS */
+
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+/* input {
+    border: 1px solid red;
+}*/
+
+/* input::placeholder {
+    color: #ff5667;
+} */
+/* p {
+    color: blue;
+}
+
+p::first-line {
+    color: red;
+}  */
+
+/* a {
+    color: blue;
+}
+
+a::after {
+    content: "🚀";
+}
+
+a::before {
+    content: "😎";
+} */
+
+/* AULA 5: PSEUDOCLASSES PT.1 */
+/* :active ➜  quando o elemento está ativo, ou seja, está sendo pressionado.
+   :visited ➜ seleciona o link que foi visitado
+   :hover ➜ quando o mouse passa em cima do elemento
+   :checked ➜ usado em radio/ checkbox/ select
+   :disabled ➜ elemento desabilitado/ button/ input
+   :enabled ➜ elemento está habilitado
+   :focus ➜ é aplicado quando um elemento recebe foco, o que pode ocorrer quando o usuário seleciona o elemento
+   :read-only ➜ seleciona input ou textarea que são apenas leitura
+   :empty ➜ elemento que não tem filho
+*/
+
+/* 
+   :first-child ➜ primeiro filho/ ex: primeira li de uma ul/ primeiro span de uma div
+   :first-of-type ➜ primeiro elemento de seu tipo entre os filhos de seu elemento pai
+   :last-child ➜ último filho
+   :last-of-type ➜ último elemento entre os filhos de seu elemento pai
+   :not() ➜ estiliza os elementos, exceto o que está dentro do ()
+   :nth-child() ➜ seleciona o elemento baseado na sua posição. Ex: :nth-child(3)
+   :nth-last-child() ➜ seleciona o elemento baseado na sua posição, contando de trás pra frente
+*/
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+/* 
+a:visited {
+    color: red;
+}
+
+p:hover {
+    color: blue;
+} */
+
+ /* input:checked {
+    width: 100px;
+    height: 100px;
+}  */
+
+/* input:focus {
+    border: 1px solid red;
+    outline: none;
+} */
+
+/* input:read-only {
+    border: 1px solid blue;
+    outline: none;
+} */
+
+/* .container {
+    height: 100px;
+    width: 100px;
+    background: red;
+}
+
+.container:empty {
+    background: blue;
+} */
+
+/* AULA 06: PSEUDO CLASSES PT. 2 */
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+/* li:last-child {
+    color: red;
+} */
+
+/* span:last-of-type {
+    color: red;
+}
+
+p:last-of-type {
+    color:blue
+} */
+
+/* .container :not(.excluido) {
+    color: red;
+} */
+
+/* li:nth-child(5) {
+    color: red;
+} */
+
+/* li:nth-last-child(1) {
+    color: red;
+} */
+
+/* AULA 07: RESPONSIVIDADE */
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div{
+    height: 500px;
+    width: 500px;
+    background: blue;
+}
+
+@media (max-width: 600px) {
+    div {
+        background: red;
+        height: 200px;
+        width: 200px;
+    }
+} */
+
+/* AULA 08: RESPONSIVIDADE PT.2 */
+/* All: para todos os diispositivos
+   Braile: para dispositivos táteis
+   Embossed: para dispositivos portáteis
+   Handheld: para dispositivos portáteis, geralmente com telas pequenas e banda limitada
+   Print: para impressão em papel
+   Projection: para apresentações como PPS
+   Screen: para monitores ou dispositivos com telas coloridas e resolução adequada
+   Speech: para sintetizadores de voz. As CSS 2 tem uma especificação de CSS chamada Aural, onde podemos formatar a voz dos sintetizadores.
+
+   Orientação
+   portrait ➜ altura maior que a largura
+   landscape ➜ largura maior que a altura
+
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div{
+    height: 500px;
+    width: 500px;
+    background: blue;
+}
+
+@media screen and (max-width: 600px) and (orientation: landscape) {
+    div {
+        background: red;
+        height: 200px;
+        width: 200px;
+    }
+}
